@@ -1,6 +1,7 @@
 package com.newgen.ReviewServiceApis.controller;
 
 import com.newgen.ReviewServiceApis.Model.Review;
+import com.newgen.ReviewServiceApis.dto.ReviewDto;
 import com.newgen.ReviewServiceApis.service.IReviewService;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,19 +19,20 @@ public class ReviewController {
     @Autowired
     public ReviewController(IReviewService reviewService) {
         this.reviewService = reviewService;
+
     }
 
     @GetMapping("/{productId}/reviews")
-    public ResponseEntity<List<Review>> getAllReviewsByProductId(@PathVariable Long productId) {
+    public ResponseEntity<List<ReviewDto>> getAllReviewsByProductId(@PathVariable Long productId) {
 
         return new ResponseEntity<>(reviewService.getReviewByProductId(productId), HttpStatus.OK);
 
     }
 
     @PostMapping("/{productId}/reviews")
-    public ResponseEntity<String> addReview(@PathVariable Long productId,@RequestBody Review review) {
-        review.setProductId(productId);
-        reviewService.addReview(review);
+    public ResponseEntity<String> addReview(@PathVariable Long productId,@RequestBody ReviewDto reviewDto) {
+        reviewDto.setProductId(productId);
+        reviewService.addReview(reviewDto);
         return new ResponseEntity<>("Review added successfully", HttpStatus.CREATED);
     }
 
