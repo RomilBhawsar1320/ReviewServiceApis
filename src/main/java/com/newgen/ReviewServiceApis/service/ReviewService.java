@@ -1,6 +1,7 @@
 package com.newgen.ReviewServiceApis.service;
 
 import com.newgen.ReviewServiceApis.Model.Review;
+import com.newgen.ReviewServiceApis.Model.ReviewDetails;
 import com.newgen.ReviewServiceApis.dto.ReviewDto;
 import com.newgen.ReviewServiceApis.mapper.ReviewMapper;
 import com.newgen.ReviewServiceApis.repository.ReviewRepository;
@@ -27,11 +28,15 @@ public class ReviewService implements IReviewService {
 
 
     @Override
-    public List<ReviewDto> getReviewByProductId(Long productID) {
+    public ReviewDetails getReviewByProductId(Long productID) {
 
-        List<Review> reviews = reviewRepository.findAllByProductId(productID);
+        List<ReviewDto> reviews = reviewRepository.findAllByProductId(productID).stream().map(reviewMapper::toDto).toList();
 
-        return reviews.stream().map(reviewMapper::toDto).collect(Collectors.toList());
+        ReviewDetails reviewDetails = new ReviewDetails();
+        reviewDetails.setReviews(reviews);
+
+        return reviewDetails;
+
     }
 
 //    private ReviewDto mapToDto(Review review) {
@@ -47,7 +52,7 @@ public class ReviewService implements IReviewService {
 //        return reviewDto;
 //
 //
-//    }
+
 
     @Override
     public void addReview(ReviewDto reviewDto) {

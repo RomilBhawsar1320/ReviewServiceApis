@@ -1,6 +1,7 @@
 package com.newgen.ReviewServiceApis.controller;
 
 import com.newgen.ReviewServiceApis.Model.Review;
+import com.newgen.ReviewServiceApis.Model.ReviewDetails;
 import com.newgen.ReviewServiceApis.dto.ReviewDto;
 import com.newgen.ReviewServiceApis.service.IReviewService;
 import jakarta.transaction.Transactional;
@@ -23,7 +24,7 @@ public class ReviewController {
     }
 
     @GetMapping("/{productId}/reviews")
-    public ResponseEntity<List<ReviewDto>> getAllReviewsByProductId(@PathVariable Long productId) {
+    public ResponseEntity<ReviewDetails> getAllReviewsByProductId(@PathVariable Long productId) {
 
         return new ResponseEntity<>(reviewService.getReviewByProductId(productId), HttpStatus.OK);
 
