@@ -8,6 +8,9 @@ public class ReviewServiceApisApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ReviewServiceApisApplication.class, args);
+
+
+
 	}
 
 }
