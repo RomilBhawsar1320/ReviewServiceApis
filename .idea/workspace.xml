@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3277f41-6ce8-47de-bf75-08f8fcc4a39c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/controller/ReviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/repository/ReviewRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/service/IReviewService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/service/ReviewService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/Model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/Model/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/ReviewServiceApisApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/ReviewServiceApisApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/repository/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newgen/ReviewServiceApis/service/ReviewService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +105,7 @@
       <workItem from="1741607849615" duration="3015000" />
       <workItem from="1741662276791" duration="3146000" />
       <workItem from="1741749018165" duration="1326000" />
-      <workItem from="1741856600426" duration="3921000" />
+      <workItem from="1741856600426" duration="7894000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,7 @@ package com.newgen.ReviewServiceApis.controller;
 
 import com.newgen.ReviewServiceApis.Model.Review;
 import com.newgen.ReviewServiceApis.service.IReviewService;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
